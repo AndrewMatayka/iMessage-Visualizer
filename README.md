@@ -1,4 +1,4 @@
-# iMessage-Visualizer
+# iMessage Visualizer
 Visualize your iMessage texts and data with graphs and statistics. Allows you to visualize your texting habits with your contacts. Uses your iPhone backup from iTunes to export iMessage Data.
 
 Requires **Python 3.6** and **iTunes**.
