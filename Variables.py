@@ -1,9 +1,9 @@
 #############################################################################
 
 #Replace with the persons name that you were texting
-leftName = "Karleigh";
+leftName = "Bob"
 
 #Replace with your name
-rightName = "Andrew";
+rightName = "John"
 
 #############################################################################
