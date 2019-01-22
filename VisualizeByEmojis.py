@@ -7,7 +7,7 @@ import os
 
 d = pd.read_csv('data.csv', encoding = "utf-8")
 
-list = []
+wordlist = []
 strings = []
 
 for x in d['text']:
@@ -17,9 +17,9 @@ data = regex.findall(r'\X', str(strings))
 
 for word in data:
         if any(char in emoji.UNICODE_EMOJI for char in word):
-                list.append(word)
+                wordlist.append(word)
 
-df = pd.DataFrame({'Emoji':list})
+df = pd.DataFrame({'Emojiwordlist})
 
 df = df.groupby('Emoji')['Emoji'].count().sort_values(ascending=False).reset_index(name='count')
 

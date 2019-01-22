@@ -25,15 +25,15 @@ days_count = days_count.days
 monthStart = monthStart.head(1).iloc[0,1]
 monthStart = pd.to_datetime(monthStart)
 
-sum = 0
+sumcount = 0
 p = 0
 
 for i in test:
     for x in test[p]:
-        sum += 1
+        sumcount += 1
     p += 1
 
-avg = (sum / d['text'].count())
+avg = (sumcount / d['text'].count())
 avg2 = ((d['text'].count()) / (len(test2)))
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -51,7 +51,7 @@ f.write("Most Active Date: " + test3 + "\n")
 f.write("")
 f.write(str(days_count) + " Days\n")
 f.write(str(d['text'].count()) + " Messages\n")
-f.write(str(sum) + " Words\n")
+f.write(str(sumcount) + " Words\n")
 f.write("")
 f.write(str(avg) + " Average Message Word Length\n")
 f.write(str(avg2) + " Average Messages Per Day of Texting\n")
