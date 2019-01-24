@@ -19,7 +19,7 @@ for word in data:
         if any(char in emoji.UNICODE_EMOJI for char in word):
                 wordlist.append(word)
 
-df = pd.DataFrame({'Emojiwordlist})
+df = pd.DataFrame({'Emoji': wordlist})
 
 df = df.groupby('Emoji')['Emoji'].count().sort_values(ascending=False).reset_index(name='count')
 
